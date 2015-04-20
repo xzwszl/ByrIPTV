@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="half_back">#8F000000</color>
+    <color name="yellow">#FFFF00</color>
+    
+    <string name="app_name">ByrIPTV</string>
+    <string name="back">返回</string>
+ 	<string name="small_window">小窗</string>
+ 	<string name="list">栏目</string>
+</resources>

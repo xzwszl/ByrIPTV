@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+
+    
+<!--  
+     <VideoView
+        android:id="@+id/videoview_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+     
+     <View  android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@android:color/transparent"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+	         android:paddingLeft="10dp"
+	         android:paddingRight="10dp"
+	         android:background="@color/half_back"
+	         android:layout_height="30dp"
+         	 android:id="@+id/relativelayout_tools">
+             
+	        <TextView
+	            android:id="@+id/textview_back"
+	            android:layout_width="50dp"
+	            android:layout_height="30dp"
+	           	android:layout_alignParentLeft="true"
+	           	android:layout_alignParentTop="true"
+	            android:textColor="@drawable/text_back"
+	            android:gravity="center"
+	            android:text="@string/back"
+	            android:textSize="18sp"/>
+
+	        <TextView
+	            android:id="@+id/textview_list"
+	            android:layout_width="50dp"
+	            android:layout_height="30dp"
+	            android:layout_alignParentRight="true"
+	           	android:layout_alignParentTop="true"
+	            android:textColor="@drawable/text_back"
+	            android:text="@string/list" 
+	            android:gravity="center"
+	            android:textSize="18sp"/>
+	        
+	        <TextView
+	            android:id="@+id/textview_smallwindow"
+	            android:layout_width="50dp"
+	            android:layout_height="30dp"
+	            android:layout_alignBaseline="@id/textview_list"
+	            android:layout_toLeftOf="@id/textview_list"
+	            android:layout_marginRight="15dp"
+	            android:textColor="@drawable/text_back"
+	            android:text="@string/small_window" 
+	            android:gravity="center"
+	            android:textSize="18sp"/>
+         </RelativeLayout>
+		
+         <ListView android:id="@+id/listview_tvs"
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             android:background="@color/half_back"
+             android:layout_gravity="right"/>
+     </LinearLayout>
+     
+     <ProgressBar android:id="@+id/progressbar"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_gravity="center"
+         style="@android:style/Widget.ProgressBar"
+         android:background="#00FFFFFF"/>
+
+</FrameLayout>
